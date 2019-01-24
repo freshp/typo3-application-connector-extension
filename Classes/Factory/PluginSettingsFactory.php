@@ -14,7 +14,7 @@ final class PluginSettingsFactory
 
         $pluginSettings = new PluginSettings(
             $settings['contact-form-hint'],
-            (int)$settings['reservation-start-pid']
+            (int)$settings['start-pid']
         );
 
         return $pluginSettings;
