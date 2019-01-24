@@ -1,0 +1,9 @@
+/composer.lock
+/package-lock.json
+/vendor
+/index.php
+/typo3
+/typo3_src
+/typo3conf
+/node_modules
+/example/dist/*

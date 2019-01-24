@@ -1,0 +1,42 @@
+{
+    "name": "freshp/typo3-application-connector-extension\n",
+    "type": "typo3-cms-extension",
+    "description": "Extension to provide a contact form.",
+    "authors": [],
+    "license": "proprietary",
+    "require": {
+        "php": ">=7.2",
+        "freshp/example-contact-form-application": "~0.1.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "typo3/cms": "~8.7.24",
+        "tm/tooly-composer-script": "~1.2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "FreshP\\ExtensionContactForm\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FreshP\\ExtensionContactForm\\Tests\\": "Tests"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Tooly\\ScriptHandler::installPharTools"
+        ],
+        "post-update-cmd": [
+            "Tooly\\ScriptHandler::installPharTools"
+        ]
+    },
+    "extra": {
+        "tools": {
+            "phpunit": {
+                "url": "https://phar.phpunit.de/phpunit-7.5.2.phar",
+                "force-replace": true
+            }
+        }
+    }
+}
