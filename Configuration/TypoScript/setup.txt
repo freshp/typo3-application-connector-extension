@@ -1,0 +1,4 @@
+page.includeCSS.contactFormStyles = EXT:typo3_application_connector_extension/Resources/Public/Css/styles.css
+
+page.includeJSFooterlibs.jQueryJs = EXT:typo3_application_connector_extension/Resources/Public/Javascript/jquery.min.js
+page.includeJSFooterlibs.bootstrapJs = EXT:typo3_application_connector_extension/Resources/Public/Javascript/bootstrap.min.js

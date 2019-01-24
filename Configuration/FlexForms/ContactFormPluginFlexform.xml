@@ -1,0 +1,47 @@
+<T3DataStructure>
+    <sheets>
+        <links>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>Links</sheetTitle>
+                </TCEforms>
+                <el>
+                    <settings.start-pid>
+                        <TCEforms>
+                            <label>Startseite</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>1</minitems>
+                                <show_thumbs>1</show_thumbs>
+                            </config>
+                        </TCEforms>
+                    </settings.start-pid>
+                </el>
+            </ROOT>
+        </links>
+        <texts>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>Text-Hinweise</sheetTitle>
+                </TCEforms>
+                <el>
+                    <settings.contact-form-hint>
+                        <TCEforms>
+                            <label>Kontaktformular-Hinweis</label>
+                            <config>
+                                <type>text</type>
+                                <cols>24</cols>
+                                <rows>3</rows>
+                                <enableRichtext>1</enableRichtext>
+                            </config>
+                        </TCEforms>
+                    </settings.contact-form-hint>
+                </el>
+            </ROOT>
+        </texts>
+    </sheets>
+</T3DataStructure>
