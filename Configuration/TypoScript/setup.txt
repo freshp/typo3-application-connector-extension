@@ -1,3 +1,11 @@
+plugin.tx_extensioncontactform {
+    view {
+        templateRootPaths.10 = EXT:typo3_application_connector_extension/Resources/Private/Templates/
+        partialRootPaths.10 = EXT:typo3_application_connector_extension/Resources/Private/Partials/
+        layoutRootPaths.10 = EXT:typo3_application_connector_extension/Resources/Private/Layouts/
+    }
+}
+
 page.includeCSS.contactFormStyles = EXT:typo3_application_connector_extension/Resources/Public/Css/styles.css
 
 page.includeJSFooterlibs.jQueryJs = EXT:typo3_application_connector_extension/Resources/Public/Javascript/jquery.min.js

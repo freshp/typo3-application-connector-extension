@@ -27,7 +27,7 @@ class ContactFormController extends BaseContactFormController
                 ),
             ]);
         } catch (\Throwable $throwable) {
-
+            var_dump($throwable);
         }
     }
 
