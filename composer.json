@@ -1,5 +1,5 @@
 {
-    "name": "freshp/typo3-application-connector-extension\n",
+    "name": "freshp/typo3-application-connector-extension",
     "type": "typo3-cms-extension",
     "description": "Extension to provide a contact form.",
     "authors": [],
