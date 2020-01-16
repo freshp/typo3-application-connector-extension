@@ -1,31 +1,24 @@
 <?php declare(strict_types=1);
 
-namespace FreshP\ExtensionContactForm\Controller;
+namespace FreshP\Typo3ApplicationConnectorExtension\Controller;
 
 use FreshP\ContactFormApplication\Factory\ViewConfigurationFactory;
 use FreshP\ContactFormApplication\Model\ContactFormModel;
 use FreshP\ContactFormApplication\ViewBuilder\Facades\ViewFacade;
 use FreshP\ContactFormApplication\ViewBuilder\Factories\ViewFacadeFactory;
-use FreshP\ExtensionContactForm\Factory\PluginSettingsFactory;
-use FreshP\ExtensionContactForm\Generator\Typo3UrlParameterGenerator;
-use FreshP\ExtensionContactForm\Model\PluginSettings;
-use FreshP\ExtensionContactForm\Service\SessionService;
-use FreshP\ExtensionContactForm\Statics\ExtensionStatics;
+use FreshP\Typo3ApplicationConnectorExtension\Factory\PluginSettingsFactory;
+use FreshP\Typo3ApplicationConnectorExtension\Generator\Typo3UrlParameterGenerator;
+use FreshP\Typo3ApplicationConnectorExtension\Model\PluginSettings;
+use FreshP\Typo3ApplicationConnectorExtension\Service\SessionService;
+use FreshP\Typo3ApplicationConnectorExtension\Statics\ExtensionStatics;
 use Symfony\Component\Form\FormErrorIterator;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Mvc\Exception\StopActionException;
 
 abstract class BaseContactFormController extends ActionController
 {
-    /**
-     * @var PluginSettings
-     */
-    protected $pluginSettings;
-
-    /**
-     * @var SessionService
-     */
-    protected $sessionService;
+    protected ?PluginSettings $pluginSettings;
+    protected ?SessionService $sessionService;
 
     public function initializeAction(): void
     {
@@ -42,10 +35,7 @@ abstract class BaseContactFormController extends ActionController
             ->reset()
             ->setTargetPageUid((int)$GLOBALS['TSFE']->id)
             ->setArguments([
-                Typo3UrlParameterGenerator::generate(
-                    $this->extensionName,
-                    $pluginName
-                ) => [
+                Typo3UrlParameterGenerator::generate($pluginName) => [
                     'action' => $actionName,
                 ]
             ])

@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace FreshP\ExtensionContactForm\Controller;
+namespace FreshP\Typo3ApplicationConnectorExtension\Controller;
 
 use FreshP\ContactFormApplication\FormApplication;
-use FreshP\ExtensionContactForm\Statics\ExtensionStatics;
+use FreshP\Typo3ApplicationConnectorExtension\Statics\ExtensionStatics;
 use TYPO3\CMS\Extbase\Mvc\Exception\StopActionException;
 use TYPO3\CMS\Extbase\Mvc\Exception\UnsupportedRequestTypeException;
 

@@ -2,11 +2,11 @@
 defined('TYPO3_MODE') or die();
 
 call_user_func(function () {
-    $pluginSignature = strtolower('ExtensionContactForm') . '_' . strtolower(\FreshP\ExtensionContactForm\Statics\ExtensionStatics::CONTACT_PLUGIN_NAME);
+    $pluginSignature = strtolower('Typo3ApplicationConnectorExtension') . '_' . strtolower(\FreshP\Typo3ApplicationConnectorExtension\Statics\ExtensionStatics::CONTACT_PLUGIN_NAME);
 
     \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-        'FreshP.ExtensionContactForm',
-        \FreshP\ExtensionContactForm\Statics\ExtensionStatics::CONTACT_PLUGIN_NAME,
+        'FreshP.Typo3ApplicationConnectorExtension',
+        \FreshP\Typo3ApplicationConnectorExtension\Statics\ExtensionStatics::CONTACT_PLUGIN_NAME,
         'Kontaktformular'
     );
 

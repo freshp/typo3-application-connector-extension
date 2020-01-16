@@ -1,19 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace FreshP\ExtensionContactForm\Service;
+namespace FreshP\Typo3ApplicationConnectorExtension\Service;
 
 use TYPO3\CMS\Frontend\Authentication\FrontendUserAuthentication;
 
 final class SessionService
 {
-    /**
-     * @var FrontendUserAuthentication
-     */
-    private $userAuthentication;
+    private FrontendUserAuthentication $userAuthentication;
 
-    /**
-     * @param FrontendUserAuthentication $userAuthentication
-     */
     public function __construct(FrontendUserAuthentication $userAuthentication)
     {
         $this->userAuthentication = $userAuthentication;

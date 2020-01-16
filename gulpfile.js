@@ -3,7 +3,6 @@
 let autoprefixer = require( 'gulp-autoprefixer' );
 let del = require( 'del' );
 let gulp = require( 'gulp' );
-let runSequence = require( 'run-sequence' );
 let sass = require( 'gulp-sass' );
 let concat = require( 'gulp-concat' );
 let cleanCSS = require( 'gulp-clean-css' );
@@ -46,9 +45,4 @@ gulp.task( 'external-scripts', function() {
 } );
 
 gulp.task( 'clean', () => del( [ './Resources/Public/Css', './Resources/Public/Javascript' ] ) );
-gulp.task( 'default', [ 'clean' ], function() {
-	runSequence(
-		'styles',
-		'external-scripts',
-	);
-} );
+gulp.task( 'default', gulp.series( 'clean', 'external-scripts', 'styles' ) );

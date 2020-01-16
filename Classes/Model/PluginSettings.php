@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace FreshP\ExtensionContactForm\Model;
+namespace FreshP\Typo3ApplicationConnectorExtension\Model;
 
 final class PluginSettings
 {
-    private $contactFormHint;
-    private $startPid;
+    private string $contactFormHint;
+    private int $startPid;
 
     public function __construct(string $contactFormHint, int $startPid)
     {

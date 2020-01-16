@@ -1,9 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace FreshP\ExtensionContactForm\Statics;
+namespace FreshP\Typo3ApplicationConnectorExtension\Statics;
 
 final class ExtensionStatics
 {
+    public const EXTENSION_NAME = 'Typo3ApplicationConnectorExtension';
     public const CONTACT_PLUGIN_NAME = 'ContactForm';
 
     public const STEP_ONE = 'showStep1';
