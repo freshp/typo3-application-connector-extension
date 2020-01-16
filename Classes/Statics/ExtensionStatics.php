@@ -4,6 +4,7 @@ namespace FreshP\Typo3ApplicationConnectorExtension\Statics;
 
 final class ExtensionStatics
 {
+    public const EXTENSION_NAME = 'Typo3ApplicationConnectorExtension';
     public const CONTACT_PLUGIN_NAME = 'ContactForm';
 
     public const STEP_ONE = 'showStep1';

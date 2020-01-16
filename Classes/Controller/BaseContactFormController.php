@@ -35,10 +35,7 @@ abstract class BaseContactFormController extends ActionController
             ->reset()
             ->setTargetPageUid((int)$GLOBALS['TSFE']->id)
             ->setArguments([
-                Typo3UrlParameterGenerator::generate(
-                    $this->extensionName,
-                    $pluginName
-                ) => [
+                Typo3UrlParameterGenerator::generate($pluginName) => [
                     'action' => $actionName,
                 ]
             ])
