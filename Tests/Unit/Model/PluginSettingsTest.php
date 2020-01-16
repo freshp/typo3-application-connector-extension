@@ -1,8 +1,8 @@
 <?php
 
-namespace FreshP\ExtensionContactForm\Tests\Unit\Model;
+namespace FreshP\Typo3ApplicationConnectorExtension\Tests\Unit\Model;
 
-use FreshP\ExtensionContactForm\Model\PluginSettings;
+use FreshP\Typo3ApplicationConnectorExtension\Model\PluginSettings;
 use PHPUnit\Framework\TestCase;
 
 class PluginSettingsTest extends TestCase

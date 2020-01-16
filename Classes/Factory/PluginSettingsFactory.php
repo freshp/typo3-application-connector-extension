@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace FreshP\ExtensionContactForm\Factory;
+namespace FreshP\Typo3ApplicationConnectorExtension\Factory;
 
-use FreshP\ExtensionContactForm\Model\PluginSettings;
+use FreshP\Typo3ApplicationConnectorExtension\Model\PluginSettings;
 
 final class PluginSettingsFactory
 {

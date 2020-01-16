@@ -1,9 +1,9 @@
 <?php
 
-namespace FreshP\ExtensionContactForm\Tests\Unit\Factory;
+namespace FreshP\Typo3ApplicationConnectorExtension\Tests\Unit\Factory;
 
-use FreshP\ExtensionContactForm\Factory\PluginSettingsFactory;
-use FreshP\ExtensionContactForm\Model\PluginSettings;
+use FreshP\Typo3ApplicationConnectorExtension\Factory\PluginSettingsFactory;
+use FreshP\Typo3ApplicationConnectorExtension\Model\PluginSettings;
 use PHPUnit\Framework\TestCase;
 
 class PluginSettingsFactoryTest extends TestCase

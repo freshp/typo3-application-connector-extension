@@ -1,8 +1,8 @@
 <?php
 
-namespace FreshP\ExtensionContactForm\Tests\Unit\Generator;
+namespace FreshP\Typo3ApplicationConnectorExtension\Tests\Unit\Generator;
 
-use FreshP\ExtensionContactForm\Generator\Typo3UrlParameterGenerator;
+use FreshP\Typo3ApplicationConnectorExtension\Generator\Typo3UrlParameterGenerator;
 use PHPUnit\Framework\TestCase;
 
 class Typo3UrlParameterGeneratorTest extends TestCase

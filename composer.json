@@ -15,12 +15,12 @@
     },
     "autoload": {
         "psr-4": {
-            "FreshP\\ExtensionContactForm\\": "Classes"
+            "FreshP\\Typo3ApplicationConnectorExtension\\": "Classes"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "FreshP\\ExtensionContactForm\\Tests\\": "Tests"
+            "FreshP\\Typo3ApplicationConnectorExtension\\Tests\\": "Tests"
         }
     },
     "scripts": {

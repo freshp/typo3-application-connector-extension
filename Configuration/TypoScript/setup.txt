@@ -1,4 +1,4 @@
-plugin.tx_extensioncontactform {
+plugin.tx_typo3applicationconnectorextension {
     view {
         templateRootPaths.10 = EXT:typo3_application_connector_extension/Resources/Private/Templates/
         partialRootPaths.10 = EXT:typo3_application_connector_extension/Resources/Private/Partials/

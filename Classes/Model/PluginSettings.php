@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace FreshP\ExtensionContactForm\Model;
+namespace FreshP\Typo3ApplicationConnectorExtension\Model;
 
 final class PluginSettings
 {
