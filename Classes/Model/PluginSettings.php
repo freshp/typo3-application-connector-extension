@@ -4,8 +4,8 @@ namespace FreshP\ExtensionContactForm\Model;
 
 final class PluginSettings
 {
-    private $contactFormHint;
-    private $startPid;
+    private string $contactFormHint;
+    private int $startPid;
 
     public function __construct(string $contactFormHint, int $startPid)
     {

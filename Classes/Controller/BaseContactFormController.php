@@ -17,15 +17,8 @@ use TYPO3\CMS\Extbase\Mvc\Exception\StopActionException;
 
 abstract class BaseContactFormController extends ActionController
 {
-    /**
-     * @var PluginSettings
-     */
-    protected $pluginSettings;
-
-    /**
-     * @var SessionService
-     */
-    protected $sessionService;
+    protected ?PluginSettings $pluginSettings;
+    protected ?SessionService $sessionService;
 
     public function initializeAction(): void
     {

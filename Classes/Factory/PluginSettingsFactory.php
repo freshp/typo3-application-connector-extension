@@ -20,7 +20,7 @@ final class PluginSettingsFactory
         return $pluginSettings;
     }
 
-    private static function validateSettings($settings): bool
+    private static function validateSettings(array $settings): bool
     {
         $return = isset(
             $settings['contact-form-hint'],

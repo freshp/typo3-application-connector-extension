@@ -6,14 +6,8 @@ use TYPO3\CMS\Frontend\Authentication\FrontendUserAuthentication;
 
 final class SessionService
 {
-    /**
-     * @var FrontendUserAuthentication
-     */
-    private $userAuthentication;
+    private FrontendUserAuthentication $userAuthentication;
 
-    /**
-     * @param FrontendUserAuthentication $userAuthentication
-     */
     public function __construct(FrontendUserAuthentication $userAuthentication)
     {
         $this->userAuthentication = $userAuthentication;

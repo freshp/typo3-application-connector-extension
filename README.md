@@ -24,5 +24,5 @@ example implementation for a talk: https://speakerdeck.com/moveelevator/architek
 
 * phpunit
     ```
-    php vendor/bin/phpunit.phar -c phpunit.xml --debug --verbose
+    php vendor/bin/phpunit.phar -c phpunit.xml --testdox
     ```
